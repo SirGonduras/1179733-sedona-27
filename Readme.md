@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Станислав Кощиенко](https://up.htmlacademy.ru/htmlcss/27/user/1179733). 
-* Наставник: [ Дмитрий Половков ] (https://up.htmlacademy.ru/htmlcss/27/user/183245).
+* Наставник: [Дмитрий Половков](https://up.htmlacademy.ru/htmlcss/27/user/183245).
 
 ---
 
