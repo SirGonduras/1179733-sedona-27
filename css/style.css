@@ -1,0 +1,24 @@
+.intro {
+    width: 1200px;
+    height: 528px;
+    background:#81b3d2 url("../img/intro-background.jpg") no-repeat 50% 50%;
+}
+
+.info-box {
+    width: 400px;
+    height: 256px;
+}
+
+.info-bg-blue {
+    background-color: #81b3d2;
+}
+
+.info-bg-grey {
+    background-color: #eeeeee;
+}
+
+.SM-box {
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
