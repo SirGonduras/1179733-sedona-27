@@ -42,6 +42,6 @@
 
 .filter {
     width: 100%;
-    height: 217px;
+    /*height: 217px;*/
     background: #81b3d2 url("../img/background-filter.jpg") no-repeat 50% 50%;
 }
