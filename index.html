@@ -139,23 +139,24 @@
       
       <section class="backgr-map">
         <!--Здесь бэкграунд карты смещенный вниз-->
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>        
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>   
+             
         <!-- Здесь будет форма --> 
         <form action="https://echo.htmlacademy.ru" method="post">
           <label for="date-in">Дата заезда:</label>
-          <input type="date" name="date-in" value="2017-04-24">
+          <input type="date" name="date-in" id="date-in" value="2017-04-24">
 
           <label for="date-out">Дата выезда:</label>
-          <input type="date" name="date-out" value="2017-06-04">
+          <input type="date" name="date-out" id="date-out" value="2017-06-04">
 
           <div class="half-width">
             <label for="adults-count">Взрослые:</label>
-            <input type="number" name="adults-count" step="1" min="1" value="2">
+            <input type="number" name="adults-count" id="adults-count" step="1" min="1" value="2">
           </div>
 
           <div class="half-width">
             <label for="childrens-count">Дети:</label>
-            <input type="number" name="childrens-count" step="1" min="0" value="0">
+            <input type="number" name="childrens-count" id="childrens-count" step="1" min="0" value="0">
           </div>
 
           <button type="submit">Найти</button>
@@ -165,24 +166,24 @@
     
     <footer>
       <h2 class="visually-hidden">Контакты</h2>
-      <p>
+      <section>
         #visitSEDONA 
         Тел: +7(495) 666-02-66
-      </p>
+      </section>
       
       <!--Добавть голубые квадраты-->
-      <p>
+      <section>
         <ul>
           <a href="#" title="Твитер"><li class="SM-box"><img src="img/twitter.svg" alt="Твитер"></li></a>
           <a href="#" title="Фейсбук"><li class="SM-box"><img src="img/fb-icon.svg" alt="Фейсбук"></li></a>
           <a href="#" title="Ютуб"><li class="SM-box"><img src="img/youtube.svg" alt="Youtube"></li></a>
         </ul>
-      </p>
+      </section>
 
-      <p> Website by
+      <section> Website by
         <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg"
           width="134" height="40" alt="HtmlAcademy"></a>
-      </p>
+      </section>
     </footer>
 
   </body>
