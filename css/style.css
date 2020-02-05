@@ -15,8 +15,12 @@
 .intro {
     width: 1200px;
     height: 528px;
-    background:#81b3d2 url("../img/intro-background.jpg") no-repeat 50% 50%;
+    background: 
+        url(../img/intro-mask.svg) no-repeat 50% 100%,
+        #81b3d2 url("../img/intro-background.jpg") no-repeat 50% 50%;
 }
+    
+    
 
 .info-box {
     width: 400px;
