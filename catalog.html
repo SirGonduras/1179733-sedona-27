@@ -17,75 +17,59 @@
             <li><a href="">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
-        </nav>
-        
-      </header>
+        </nav>      
+    </header>
 
     <main>
         <h1>Отели</h1>
         
-        <section class="filter">
-            <section>
-                <!--Поменять-->
-                <table border="0">
-                    <tr>
-                        <td>Инфраструктура:</td>
-                        <td>Тип жилья:</td>
-                    </tr>
-
-                    <tr>
-                        <td>
+        <section class="filter">            
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li>
                             <input type="checkbox" name="swpool" id="" checked>
-                            Басейн
-                        </td>
-                        <td>
-                            <input type="checkbox" name="hotel" id="" checked>
-                            Гостиница
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
+                            <label for="swpool">Басейн</label>
+                        </li>
+                        <li>
                             <input type="checkbox" name="parking" id="">
-                            Парковка
-                        </td>
-                        <td>
-                            <input type="checkbox" name="motel" id="" checked>
-                            Мотель
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
+                            <label for="parking">Парковка</label>
+                        </li>
+                        <li>
                             <input type="checkbox" name="wi-fi" id="">
-                            WI-FI
-                        </td>
-                        <td>
+                            <label for="wi-fi">WI-FI</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="hotel" id="" checked>
+                            <label for="hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="motel" id="" checked>
+                            <label for="motel">Мотель</label>
+                        </li>
+                        <li>
                             <input type="checkbox" name="apartments" id="" checked>
-                            Апартаменты
-                        </td>
-                    </tr>
-                </table>
+                            <label for="apartments">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
 
-            </section>
-
-            <section>
-                <!--Поменять-->
-                <p>Стоимость в сутки (Р):</p>
-                <table border="1">
-                    <tr>
-                        <td>
-                            <p>от 0</p>
-                        </td>
-                        <td>
-                            <p>до 3000</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <!--Пока не знаю как делать этот ползунок (CSS)--> 
-                <button type="button">Показать</button>
-            </section>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <!--Поменять-->
+                    <label for="rangecost"> от 0 до 3000</label>
+                    <input type="range" id="cost" name="rangecost" min="0" max="5000" step="1" value="3000">
+                    
+                    <button type="submit">Показать</button>
+                </fieldset>
+            </form>
         </section>
 
         <section>
@@ -160,23 +144,24 @@
     </main>
 
     <footer>
+        <h2>Контакты</h2>
         <p>
-          #visitSEDONA <br>
+          #visitSEDONA 
           Тел: +7(495) 666-02-66
         </p>
         
         <!--Добавть голубые квадраты-->
         <p>
           <ul>
-            <li class="SM-box"><a href="#"><img src="img/twitter.svg" alt="Твитер"></a></li>
-            <li class="SM-box"><a href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-            <li class="SM-box"><a href="#"><img src="img/youtube.svg" alt="Youtube"></a></li>
+            <a href="#" title="Твитер"><li class="SM-box"><img src="img/twitter.svg" alt="Твитер"></li></a>
+            <a href="#" title="Фейсбук"><li class="SM-box"><img src="img/fb-icon.svg" alt="Фейсбук"></li></a>
+            <a href="#" title="Ютуб"><li class="SM-box"><img src="img/youtube.svg" alt="Youtube"></li></a>
           </ul>
         </p>
   
         <p> Website by
           <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg"
-            width="134" height="40" alt="Логотип HtmlAcademy"></a>
+            width="134" height="40" alt="HtmlAcademy"></a>
         </p>
       </footer>
 
