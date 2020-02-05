@@ -31,15 +31,15 @@
                     <legend>Инфраструктура:</legend>
                     <ul>
                         <li>
-                            <input type="checkbox" name="swpool" id="" checked>
+                            <input type="checkbox" name="swpool" id="swpool" checked>
                             <label for="swpool">Басейн</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="parking" id="">
+                            <input type="checkbox" name="parking" id="parking">
                             <label for="parking">Парковка</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="wi-fi" id="">
+                            <input type="checkbox" name="wi-fi" id="wi-fi">
                             <label for="wi-fi">WI-FI</label>
                         </li>
                     </ul>
@@ -49,15 +49,15 @@
                     <legend>Тип жилья:</legend>
                     <ul>
                         <li>
-                            <input type="checkbox" name="hotel" id="" checked>
+                            <input type="checkbox" name="hotel" id="hotel" checked>
                             <label for="hotel">Гостиница</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="motel" id="" checked>
+                            <input type="checkbox" name="motel" id="motel" checked>
                             <label for="motel">Мотель</label>
                         </li>
                         <li>
-                            <input type="checkbox" name="apartments" id="" checked>
+                            <input type="checkbox" name="apartments" id="apartments" checked>
                             <label for="apartments">Апартаменты</label>
                         </li>
                     </ul>
@@ -67,7 +67,7 @@
                     <legend>Стоимость в сутки (Р):</legend>
                     <!--Поменять-->
                     <label for="rangecost"> от 0 до 3000</label>
-                    <input type="range" id="cost" name="rangecost" min="0" max="5000" step="1" value="3000">
+                    <input type="range" id="rangecost" name="rangecost" min="0" max="5000" step="1" value="3000">
                     
                     <button type="submit">Показать</button>
                 </fieldset>
@@ -76,7 +76,7 @@
 
         <section>
             <h2 class="visually-hidden">Результаты поиска</h2>
-            <p>
+            <section>
                 <div>
                     <h2 >Найдено: 3</h2>
                     <ul>
@@ -89,9 +89,9 @@
                 <div>
                     <!--Переключатели-->
                 </div>
-            </p>
+            </section>
 
-            <p>
+            <section>
                 <ul>
                     <li>
                         <p>                        
@@ -141,32 +141,32 @@
                         </p>                    
                     </li>
                 </ul>
-            </p>
+            </section>
         </section>
 
     </main>
 
     <footer>
         <h2 class="visually-hidden">Контакты</h2>
-        <p>
+        <section>
           #visitSEDONA 
           Тел: +7(495) 666-02-66
-        </p>
+        </section>
         
         <!--Добавть голубые квадраты-->
-        <p>
+        <section>
           <ul>
             <a href="#" title="Твитер"><li class="SM-box"><img src="img/twitter.svg" alt="Твитер"></li></a>
             <a href="#" title="Фейсбук"><li class="SM-box"><img src="img/fb-icon.svg" alt="Фейсбук"></li></a>
             <a href="#" title="Ютуб"><li class="SM-box"><img src="img/youtube.svg" alt="Youtube"></li></a>
           </ul>
-        </p>
+        </section>
   
-        <p> Website by
+        <section> Website by
           <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg"
             width="134" height="40" alt="HtmlAcademy"></a>
-        </p>
-      </footer>
+        </section>
+      </footer> 
 
   </body>
 </html>
