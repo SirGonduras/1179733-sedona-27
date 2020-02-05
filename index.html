@@ -131,14 +131,33 @@
 
       <h2>Заинтересовались?</h2>
       <p>
-        Укажите предполагаемые даты поездки,<br>
+        Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       
       <section class="backgr-map">
         <!--Здесь бэкграунд карты смещенный вниз-->
         <h2>Поиск гостиницы в Седоне</h2>        
-        <!-- Здесь будет форма -->       
+        <!-- Здесь будет форма --> 
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <label for="date-in">Дата заезда:</label>
+          <input type="date" name="date-in" value="2017-04-24">
+
+          <label for="date-out">Дата выезда:</label>
+          <input type="date" name="date-out" value="2017-06-04">
+
+          <div class="half-width">
+            <label for="adults-count">Взрослые:</label>
+            <input type="number" name="adults-count" step="1" min="1" value="2">
+          </div>
+
+          <div class="half-width">
+            <label for="childrens-count">Дети:</label>
+            <input type="number" name="childrens-count" step="1" min="0" value="0">
+          </div>
+
+          <button type="submit">Найти</button>
+        </form>      
       </section>
 
       
