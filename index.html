@@ -13,9 +13,9 @@
         <a href="index.html"><img src="img/logo-sedona.svg" width="139" height="71" alt="Логотип фирмы"></a>
         
         <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>      
@@ -24,11 +24,20 @@
     <main>      
       <section class="intro">        
         <h1>Город Седона</h1>  
-          <img src="img/intro-welcome.svg" width="458" height="352" alt="Добро пожаловать в Джорджию. Синода &#8222;Потому что гранд каньон отстой&#8221;">
+        <img src="img/intro-welcome.svg" width="458" height="352" alt="Добро пожаловать в Джорджию. Синода &#8222;Потому что гранд каньон отстой&#8221;">
       </section>
     
       <section class="description">
         <h2 class="visually-hidden">Преимущества Седоны</h2> 
+        <p>
+          <strong>
+            Седона — небольшой городок в Аризоне,
+            заслуживающий большего!
+          </strong>
+        </p>
+        
+        <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </span>
+        
         <!--Описание города, сетка-->
         <!--Первая строка-->
         <section class="info-box info-bg-blue">
@@ -37,56 +46,53 @@
             городок
           </h3>
           <!--Как делать линии? Стили или html?-->
-          <p>— №1 —</p>
+          <span>— №1 —</span>
           <p>
             Седона — не аттракцион для туристов,
             там течёт своя жизнь
           </p>    
         </section>
-        
-        <section>
-          <img src="img/photo-city.jpg" width="800" height="256" alt="Фотография города">
-        </section>
+
+        <img src="img/photo-city.jpg" width="800" height="256" alt="Фотография города">
 
         <!--Вторая строка-->
-        <section class="info-box">
-          <img src="img/icon-house.svg" alt="Изображение дома">
-          <p><b>Жильё</b></p>          
-          <p>
-            Рекомендуем пожить в настоящем
-            мотеле, всё как в кино!
-          </p>
-        </section>
-
-        <section class="info-box">
-          <img src="img/icon-hamburger.svg" alt="Изображение гамбургера">     
-          <p><b>Еда</b></p> 
-          <p>
-            Всегда заказывайте фирменный бургер,
-            вы не разочаруетесь!
-          </p>
-        </section>
-
-        <section class="info-box">
-          <img src="img/icon-gift.svg" alt="Изображение подарка">
-          <p><b>Сувениры</b></p>
-          <p>
-            Не только китайского, но и местного
-            производства!
-          </p>
-        </section>
+        <ul class="info-grid">
+          <li>
+            <img src="img/icon-house.svg" alt="Изображение дома">
+            <h3>Жильё</h3>
+            <p>
+              Рекомендуем пожить в настоящем
+              мотеле, всё как в кино!
+            </p>
+          </li>
+          <li>
+            <img src="img/icon-hamburger.svg" alt="Изображение гамбургера">   
+            <h3>Еда</h3>
+            <p>
+              Всегда заказывайте фирменный бургер,
+              вы не разочаруетесь!
+            </p>
+          </li>
+          <li>
+            <img src="img/icon-gift.svg" alt="Изображение подарка">
+            <h3>Сувениры</h3>
+            <p>
+              Не только китайского, но и местного
+              производства!
+            </p>
+          </li>
+        </ul>
 
         <!--Третья строка-->
-        <section>
-          <img src="img/photo-mountains.jpg" width="800" height="256" alt="Фотография гор">
-        </section>
+        <img src="img/photo-mountains.jpg" width="800" height="256" alt="Фотография гор">
+        
 
         <section class="info-box info-bg-blue">
           <h3>
             Там есть
             Мост дьявола
           </h3>
-          <p>— №2 —</p>
+          <span>— №2 —</span>
           <p>
             Да, по нему можно пройти!
             Если конечно вы осмелитесь
@@ -94,41 +100,43 @@
         </section>
 
         <!--Четвертая строка-->
-        <section class="info-box info-bg-grey">
-          <h3>
-            Небольшая
-            площадь
-          </h3>
-          <p>— №3 —</p>
-          <p>
-            Все достопримечательности
-            находятся очень близко
-          </p>    
-        </section>
+        <ul class="info-grid info-grid-bg-grey">
+          <li>
+            <h3>
+              Небольшая
+              площадь
+            </h3>
+            <span>— №3 —</span>
+            <p>
+              Все достопримечательности
+              находятся очень близко
+            </p>  
+          </li>
 
-        <section class="info-box info-bg-grey">
-          <h3>
-            Красивая
-            дорога
-          </h3>
-          <p>— №4 —</p>
-          <p>
-            Ехать в Седону из Лас-Вегаса совсем
-            не скучно!
-          </p>    
-        </section>
+          <li>
+            <h3>
+              Красивая
+              дорога
+            </h3>
+            <span>— №4 —</span>
+            <p>
+              Ехать в Седону из Лас-Вегаса совсем
+              не скучно!
+            </p>  
+          </li>
 
-        <section class="info-box info-bg-grey">
-          <h3>
-            Мало
-            туристов
-          </h3>
-          <p>— №5 —</p>
-          <p>
-            Большинство едет в гранд каньон<br>
-            и толпится там
-          </p>    
-        </section>        
+          <li>
+            <h3>
+              Мало
+              туристов
+            </h3>
+            <span>— №5 —</span>
+            <p>
+              Большинство едет в гранд каньон<br>
+              и толпится там
+            </p>   
+          </li>
+        </ul>     
       </section>
 
       <h2>Заинтересовались?</h2>
@@ -136,55 +144,59 @@
         Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
+      <button class="button">Поиск гостиницы в Седоне</button>
       
-      <section class="backgr-map">
-        <!--Здесь бэкграунд карты смещенный вниз-->
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>   
-             
-        <!-- Здесь будет форма --> 
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="date-in">Дата заезда:</label>
-          <input type="date" name="date-in" id="date-in" value="2017-04-24">
-
-          <label for="date-out">Дата выезда:</label>
-          <input type="date" name="date-out" id="date-out" value="2017-06-04">
-
-          <div class="half-width">
-            <label for="adults-count">Взрослые:</label>
-            <input type="number" name="adults-count" id="adults-count" step="1" min="1" value="2">
-          </div>
-
-          <div class="half-width">
-            <label for="childrens-count">Дети:</label>
-            <input type="number" name="childrens-count" id="childrens-count" step="1" min="0" value="0">
-          </div>
-
-          <button type="submit">Найти</button>
-        </form>      
-      </section>
     </main>
     
     <footer>
-      <h2 class="visually-hidden">Контакты</h2>
-      <section>
-        #visitSEDONA 
-        Тел: +7(495) 666-02-66
-      </section>
-      
+      <p>
+        <h2 class="visually-hidden">Контакты</h2>
+        <a href="index.html">#visitSEDONA</a>
+        <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>        
+      </p>
+          
       <!--Добавть голубые квадраты-->
-      <section>
+      <p>
         <ul>
-          <a href="#" title="Твитер"><li class="SM-box"><img src="img/twitter.svg" alt="Твитер"></li></a>
-          <a href="#" title="Фейсбук"><li class="SM-box"><img src="img/fb-icon.svg" alt="Фейсбук"></li></a>
-          <a href="#" title="Ютуб"><li class="SM-box"><img src="img/youtube.svg" alt="Youtube"></li></a>
+          <li class="SM-box"><a href="#" title="Твитер"><img src="img/twitter.svg" alt="Твитер"></a></li>
+          <li class="SM-box"><a href="#" title="Фейсбук"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+          <li class="SM-box"><a href="#" title="Ютуб"><img src="img/youtube.svg" alt="Youtube"></a></li>
         </ul>
-      </section>
+      </p>
 
-      <section> Website by
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg"
-          width="134" height="40" alt="HtmlAcademy"></a>
-      </section>
+      <p>
+        <a href="https://htmlacademy.ru">
+          Website by        
+          <img src="img/logo-htmlacademy.svg" width="134" height="40" alt="HtmlAcademy">
+        </a>
+      </p>
     </footer>
 
+    <section class="backgr-map">
+      <!--Здесь бэкграунд карты смещенный вниз-->
+      <h2 class="visually-hidden">Форма поиска отелей</h2>   
+           
+      <!-- Здесь будет форма --> 
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="date-in">Дата заезда:</label>
+        <input type="date" name="date-in" id="date-in" value="2017-04-24">
+
+        <label for="date-out">Дата выезда:</label>
+        <input type="date" name="date-out" id="date-out" value="2017-06-04">
+
+        <div class="half-width">
+          <label for="adults-count">Взрослые:</label>
+          <input type="number" name="adults-count" id="adults-count" step="1" min="1" value="2">
+        </div>
+
+        <div class="half-width">
+          <label for="childrens-count">Дети:</label>
+          <input type="number" name="childrens-count" id="childrens-count" step="1" min="0" value="0">
+        </div>
+
+        <button type="submit">Найти</button>
+      </form>      
+    </section>
+    
   </body>
 </html>
