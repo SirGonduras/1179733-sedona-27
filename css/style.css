@@ -18,7 +18,7 @@
 /* footer */
 /* ================ */
 
-.SM-box {
+.sm-box {
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
@@ -37,7 +37,14 @@
 }
     
     
+.info-grid > li {
+    width: 400px;
+    height: 256px;
+}
 
+.info-grid-bg-grey > li {
+    background-color: #eeeeee;
+}
 .info-box {
     width: 400px;
     height: 256px;
@@ -47,9 +54,7 @@
     background-color: #81b3d2;
 }
 
-.info-bg-grey {
-    background-color: #eeeeee;
-}
+
 
 
 /* ================ */
