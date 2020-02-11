@@ -2,17 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="main-header">
+      <nav class="main-navigation">
         <h2 class="visually-hidden">Навигация</h2>
 
-        <a href="index.html"><img src="img/logo-sedona.svg" width="139" height="71" alt="Логотип фирмы"></a>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo-sedona.svg" width="139" height="71" alt="Логотип фирмы">
+        </a>
         
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -21,24 +25,25 @@
       </nav>      
     </header>
 
-    <main>      
+    <main class="container">      
       <section class="intro">        
-        <h1>Город Седона</h1>  
+        <h1 class="visually-hidden">Город Седона</h1>  
         <img src="img/intro-welcome.svg" width="458" height="352" alt="Добро пожаловать в Джорджию. Синода &#8222;Потому что гранд каньон отстой&#8221;">
       </section>
     
       <section class="description">
-        <h2>
-          Седона — небольшой городок в Аризоне,
-          заслуживающий большего!
-        </h2>
-              
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
-        
+        <div class="description-intro">
+          <h2>
+            Седона — небольшой городок в Аризоне,
+            заслуживающий большего!
+          </h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
+        </div>
+
         <!--Описание города, сетка-->
         <!--Первая строка-->
-        <section class="info-bg-blue">
-          <div>
+        <section class="box-blue">
+          <div class="feature-item">
             <h3>
               Настоящий
               городок
@@ -55,8 +60,8 @@
 
 
         <!--Вторая строка-->
-        <ul class="info-grid">
-          <li>
+        <ul class="features-list">
+          <li class="feature-item">
             <img src="img/icon-house.svg" alt="Изображение дома">
             <h3>Жильё</h3>
             <p>
@@ -64,7 +69,7 @@
               мотеле, всё как в кино!
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="img/icon-hamburger.svg" alt="Изображение гамбургера">   
             <h3>Еда</h3>
             <p>
@@ -72,7 +77,7 @@
               вы не разочаруетесь!
             </p>
           </li>
-          <li>
+          <li class="feature-item">
             <img src="img/icon-gift.svg" alt="Изображение подарка">
             <h3>Сувениры</h3>
             <p>
@@ -85,10 +90,10 @@
         <!--Третья строка-->
         
 
-        <section class="info-bg-blue">
+        <section class="box-blue">
           <img src="img/photo-mountains.jpg" width="800" height="256" alt="Фотография гор">
 
-          <div>
+          <div class="feature-item">
             <h3>
               Там есть
               Мост дьявола
@@ -102,8 +107,8 @@
         </section>
 
         <!--Четвертая строка-->
-        <ul class="info-grid info-grid-bg-grey">
-          <li>
+        <ul class="features-list bg-grey">
+          <li class="feature-item">
             <h3>
               Небольшая
               площадь
@@ -115,7 +120,7 @@
             </p>  
           </li>
 
-          <li>
+          <li class="feature-item">
             <h3>
               Красивая
               дорога
@@ -127,7 +132,7 @@
             </p>  
           </li>
 
-          <li>
+          <li class="feature-item">
             <h3>
               Мало
               туристов
