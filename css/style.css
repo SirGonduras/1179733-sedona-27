@@ -1,7 +1,20 @@
 
 /* ================ */
-/* ALL */
+/* Global */
 /* ================ */
+
+body {
+    margin: 0;
+    padding: 0;  
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: regular;
+    color: #000000;
+    text-transform: uppercase;    
+    background-color: #f2f2f2;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -13,7 +26,23 @@
     overflow: hidden;
 }
 
+/* ================ */
+/* header */
+/* ================ */
 
+.main-navigation {
+    font-weight: bold;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-navigation ul {
+    list-style: none;
+}
+  
 /* ================ */
 /* footer */
 /* ================ */
@@ -36,24 +65,48 @@
         #81b3d2 url("../img/intro-background.jpg") no-repeat 50% 50%;
 }
     
-    
-.info-grid > li {
+.description {
+    text-align: center;
+    background-color:#ffff;
+}
+
+.box-blue {
+    color: #ffffff;
+    background-color: #81b3d2;    
+}
+
+.description-intro p {
+    color: #333333;
+}
+
+.description h2 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.description h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.feature-item {
     width: 400px;
     height: 256px;
 }
 
-.info-grid-bg-grey > li {
+.features-list p {
+    color: #333333;
+}
+
+.bg-grey li {
     background-color: #eeeeee;
 }
-/*
-.info-box {
-    width: 400px;
-    height: 256px;
-}
-*/
-.info-bg-blue {
-    background-color: #81b3d2;
-}
+  
+
 
 
 
