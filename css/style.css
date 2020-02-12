@@ -104,12 +104,34 @@ body {
 .bg-grey li {
     background-color: #eeeeee;
 }
+
+.offer p {
+    color: #333333;
+}
+
+.selection label{
+    font-weight: bold;
+}
+
+.offer .button {
+    font: inherit;
   
+    text-align: center;
+    font-size: 21px;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    
+    border: none;
+}
 
+.offer .btn-form {
+    background-color:#766357;
+}
 
-
-
-
+.offer .btn-submit {
+    background-color:#81b3d2;
+}
 /* ================ */
 /* catalog main */
 /* ================ */
