@@ -16,10 +16,10 @@
           </a>
           
           <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a class ="navigation-item" href="#">Информация</a></li>
+            <li><a class ="navigation-item" href="#">Фото и видео</a></li>
+            <li><a class ="navigation-item" href="#">Карта штата</a></li>
+            <li><a class ="navigation-item" href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>      
     </header>
@@ -30,10 +30,10 @@
         <section class="filter">          
             <h2 class="visually-hidden">Фильтр</h2>  
 
-            <form class="filter-form"method="get" action="https://echo.htmlacademy.ru">
+            <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Инфраструктура:</legend>
-                    <ul>
+                    <ul class="infrastructure-list">
                         <li>
                             <input type="checkbox" name="swpool" id="swpool" checked>
                             <label for="swpool">Басейн</label>
@@ -51,7 +51,7 @@
 
                 <fieldset>
                     <legend>Тип жилья:</legend>
-                    <ul>
+                    <ul class="infrastructure-type">
                         <li>
                             <input type="checkbox" name="hotel" id="hotel" checked>
                             <label for="hotel">Гостиница</label>
