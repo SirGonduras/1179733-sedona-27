@@ -30,7 +30,7 @@
         <section class="filter">          
             <h2 class="visually-hidden">Фильтр</h2>  
 
-            <form method="get" action="https://echo.htmlacademy.ru">
+            <form class="filter-form"method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Инфраструктура:</legend>
                     <ul>
@@ -73,18 +73,18 @@
                     <label for="rangecost"> от 0 до 3000</label>
                     <input type="range" id="rangecost" name="rangecost" min="0" max="5000" step="1" value="3000">
                     
-                    <button type="submit">Показать</button>
+                    <button class="btn-filter" type="submit">Показать</button>
                 </fieldset>
             </form>
         </section>
 
-        <section>
+        <section class="hotels">
             <h2 class="visually-hidden">Результаты поиска</h2>
-            <section>
+            <section class="hotels-filter">
                 <div>
-                    <samp>Найдено: 3</samp>
-                    <ul>
-                        <li>Сортировка:</li>
+                    <samp class="filter-result">Найдено: 3</samp>
+                    <samp class="sort-lable">Сортировка:</samp>
+                    <ul class="sort-list">
                         <li>По цене</li>
                         <li>По типу</li>
                         <li>По рейтингу</li>
@@ -95,57 +95,56 @@
                 </div>
             </section>
 
-            <section>
-                
-                <ul>
-                    <li>                         
+            <section class="hotels-result">
+                <ul class="hotels-list">
+                    <li class="hotels-item">                         
                         <img src="img/photo1.jpg" alt="Отель Amara Resort & Spa">
 
                         <div>
-                            <h3>Amara Resort & Spa</h3>
-                            <span>Гостиница</span>
-                            <span>От 4000 Р.</span>
-                            <a href="#">Подробнее</a>
-                            <a href="#">Забронировать</a>                            
+                            <h3 class="hotels-name">Amara Resort & Spa</h3>
+                            <span class="hotels-type">Гостиница</span>
+                            <span class="hotels-cost">От 4000 Р.</span>
+                            <a class="ref-details" href="#">Подробнее</a>
+                            <a class="ref-book" href="#">Забронировать</a>                            
                         </div>          
 
                         <div>
                             <span><!--Звезды--></span>
-                            <span>Рейтиг: 8,5</span>                        
+                            <span class="rating">Рейтиг: 8,5</span>                        
                         </div>                    
                     </li>
 
-                    <li>
+                    <li class="hotels-item">
                         <img src="img/photo2.jpg" alt="Отель Desert Quail Inn">
 
                         <div>                        
-                            <h3>Desert Quail Inn</h3>
-                            <span>Мотель</span>
-                            <span>От 3000 Р.</span>                                     
-                            <a href="#">Подробнее</a>
-                            <a href="#">Забронировать</a>
+                            <h3 class="hotels-name">Desert Quail Inn</h3>
+                            <span class="hotels-type">Мотель</span>
+                            <span class="hotels-cost">От 3000 Р.</span>                                     
+                            <a class="ref-details" href="#">Подробнее</a>
+                            <a class="ref-book" href="#">Забронировать</a>
                         </div>
 
                         <div>
                             <span><!--Звезды--></span>
-                            <span>Рейтиг: 8,9</span>                        
+                            <span class="rating">Рейтиг: 8,9</span>                        
                         </div>                    
                     </li>
 
-                    <li>
+                    <li class="hotels-item">
                         <img src="img/photo3.jpg" alt="Отель Villas at Poco Diablo">
 
                         <div>                        
-                            <h3>Villas at Poco Diablo</h3>
-                            <span>Гостиница</span>
-                            <span>От 2000 Р.</span>
-                            <a href="#">Подробнее</a>
-                            <a href="#">Забронировать</a>
+                            <h3 class="hotels-name">Villas at Poco Diablo</h3>
+                            <span class="hotels-type">Гостиница</span>
+                            <span class="hotels-cost">От 2000 Р.</span>
+                            <a class="ref-details" href="#">Подробнее</a>
+                            <a class="ref-book" href="#">Забронировать</a>
                         </div>
 
                         <div>
                             <span><!--Звезды--></span>
-                            <span>Рейтиг: 9,2</span>                        
+                            <span class="rating">Рейтиг: 9,2</span>                        
                         </div>                    
                     </li>
                 </ul>
@@ -161,14 +160,13 @@
           <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>        
         </div>
             
-        <!--Добавть голубые квадраты-->
-        <div class="socmedia">
-          <ul class="socmedia-list">
-            <li class=""><a href="#" title="Твитер"><img src="img/twitter.svg" alt="Твитер"></a></li>
-            <li class=""><a href="#" title="Фейсбук"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-            <li class=""><a href="#" title="Ютуб"><img src="img/youtube.svg" alt="Youtube"></a></li>
-          </ul>
-        </div>
+        <!--Добавть голубые квадраты-->     
+        <ul class="socmedia-list">
+          <li class=""><a href="#" title="Твитер"><img src="img/twitter.svg" alt="Твитер"></a></li>
+          <li class=""><a href="#" title="Фейсбук"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+          <li class=""><a href="#" title="Ютуб"><img src="img/youtube.svg" alt="Youtube"></a></li>
+        </ul>
+  
   
         <div class="html-academy">
           <a href="https://htmlacademy.ru">
@@ -176,7 +174,7 @@
             <img class="ac-logo" src="img/logo-htmlacademy.svg" width="134" height="40" alt="HtmlAcademy">
           </a>
         </div>
-    </footer>
+      </footer>
 
   </body>
 </html>
