@@ -61,6 +61,7 @@ body {
     list-style: none;
 }
 
+
 /* ================ */
 /* index main */
 /* ================ */
@@ -121,6 +122,17 @@ body {
     font-weight: bold;
 }
 
+.selection input {
+    background-color: #f2f2f2;
+}
+
+.selection input:hover {
+    background-color: #ebebeb;
+}
+.selection input:focus {
+    background-color: #ffffff;
+}
+
 .offer .button {
     font: inherit;
   
@@ -137,8 +149,26 @@ body {
     background-color:#766357;
 }
 
+.offer .btn-form:hover {
+    background-color: #604e43;
+}
+
+.offer .btn-form:active {
+    color: #857871;
+    background-color: #503e33;
+}
+
 .offer .btn-submit {
     background-color:#81b3d2;
+}
+
+.offer .btn-submit:hover {
+    background-color: #669ec0;
+}
+
+.offer .btn-submit:active {
+    color: #88b6d1;
+    background-color: #5496bd;
 }
 /* ================ */
 /* catalog main */
