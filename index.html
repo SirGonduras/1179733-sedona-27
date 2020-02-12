@@ -146,40 +146,39 @@
         </ul>     
       </section>
 
-      <section>
+      <section class="offer">
         <h2>Заинтересовались?</h2>
         <p>
           Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
 
-        <button class="button">Поиск гостиницы в Седоне</button>
-      </section>
+        <button class="button btn-form">Поиск гостиницы в Седоне</button>
       
-
-      <section class="backgr-map">
-        <h2 class="visually-hidden">Форма поиска отелей</h2>   
-         
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="date-in">Дата заезда:</label>
-          <input type="date" name="date-in" id="date-in" value="2017-04-24">
-  
-          <label for="date-out">Дата выезда:</label>
-          <input type="date" name="date-out" id="date-out" value="2017-06-04">
-  
-          <div class="half-width">
-            <label for="adults-count">Взрослые:</label>
-            <input type="number" name="adults-count" id="adults-count" step="1" min="1" value="2">
-          </div>
-  
-          <div class="half-width">
-            <label for="childrens-count">Дети:</label>
-            <input type="number" name="childrens-count" id="childrens-count" step="1" min="0" value="0">
-          </div>
-  
-          <button type="submit">Найти</button>
-        </form>      
-      </section>
+        <section class="selection">
+          <h2 class="visually-hidden">Форма поиска отелей</h2>   
+          
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label for="date-in">Дата заезда:</label>
+            <input type="date" name="date-in" id="date-in" value="2017-04-24" >
+    
+            <label for="date-out">Дата выезда:</label>
+            <input type="date" name="date-out" id="date-out" value="2017-06-04">
+    
+            <div class="half-width">
+              <label for="adults-count">Взрослые:</label>
+              <input type="number" name="adults-count" id="adults-count" step="1" min="1" value="" placeholder="2">
+            </div>
+    
+            <div class="half-width">
+              <label for="childrens-count">Дети:</label>
+              <input type="number" name="childrens-count" id="childrens-count" step="1" min="0" value="" placeholder="0">
+            </div>
+    
+            <button class="button btn-submit" type="submit">Найти</button>
+          </form>      
+        </section>
+    </section>
       
       <!--Карта-->
       <section class="map">
