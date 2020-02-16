@@ -30,8 +30,19 @@ body {
 /* header */
 /* ================ */
 
-.main-navigation {
-    font-weight: bold;
+.site-navigation {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.site-navigation li {
+    min-width: 239px;
+    height: 56px;
+}
+
+/* Как поместить логотип в центр? */
+.img-logo {
+    align-items: center;
 }
 
 .main-navigation a {
@@ -41,6 +52,7 @@ body {
 
 .main-navigation li {
     list-style: none;
+    font-weight: bold;
 }
 
 .site-navigation .navigation-item:hover {
@@ -82,7 +94,7 @@ body {
 }
     
 .description {
-    text-align: center;
+    box-sizing: border-box;
 }
 
 .box-blue {
@@ -90,7 +102,27 @@ body {
     background-color: #81b3d2;    
 }
 
+.description-intro {
+    width: 1200px;
+    height: 216px;
+
+    text-align: center;
+}
+
+.description-intro h2 {
+    margin: 0 auto;
+    padding-top: 61px;
+    margin-bottom: 38px;
+
+    width: 440px;
+    height: 48px;
+}
+
 .description-intro p {
+    width: 489px;
+    height: 13px;
+
+    margin: 0 auto;
     color: #333333;
 }
 
@@ -108,9 +140,21 @@ body {
     list-style: none;
 }
 
+.flex-box {
+    width: auto;
+    display: flex;
+}
+
 .feature-item {
     width: 400px;
     height: 256px;
+
+    
+    text-align: center;
+    padding-top: 46px;
+    /* padding-left: 60px; */
+    /* padding-right: 60px; */
+    /* padding-bottom: 64px; */
 }
 
 .features-list p {
