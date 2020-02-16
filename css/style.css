@@ -226,6 +226,12 @@ body {
     list-style: none;
 }
 
+.sort-list a {
+    text-decoration: none;
+    color: #0000004c;
+    border-bottom: 1px dotted #81b3d2;
+}
+
 .hotels-list h3 {
     font-size: 21px;
     font-weight: bold;
