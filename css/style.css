@@ -19,6 +19,10 @@ body {
     background-color: #ffffff;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -43,10 +47,14 @@ body {
     min-height: 56px;
 }
 
+.main-navigation {
+    position: relative;
+}
+
 /* Как поместить логотип в центр? */
 .img-logo {
     position: absolute;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 .main-navigation a {
@@ -514,8 +522,6 @@ body {
     justify-content: space-between;
 }
 
-
-
 .hotels-list {
     margin: 0;
     padding: 0;
@@ -530,14 +536,59 @@ body {
     display: flex;
 }
 
+.hotels-list li:last-of-type {
+    border-bottom: 1px solid #b2b2b2;
+}
+
 .hotels-list img {
     padding-left: 72px;
     padding-right: 30px;
 }
 
-.hotels-list h3 {
+.container-info {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 258px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.container-info .hotels-cost {
+    margin-left: 49px;
+}
+
+.container-info .ref-book {
+    margin-left: 6px;
+}
+
+.container-info h3 {
     font-size: 21px;
+    margin: 0;
+    width: 258px;
     font-weight: bold;
+}
+
+.hotels-item .container-rating {
+    width: 111px;
+    height: 91px;
+    margin-left: auto;
+    padding-right: 72px;
+    position: relative;
+}
+
+.container-rating .rating {
+    width: 110px;
+    height: 27px;
+    padding-right: 1px;
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+
+    color: #666666;    
+    background-color: #f2f2f2;
 }
 
 .hotels-item .hotels-type {
@@ -553,9 +604,11 @@ body {
     height: 27px;
 
     text-decoration: none;
-    color: #ffffff;    
+    color: #ffffff; 
+    text-align: center;   
     font-weight: bold;
     background-color: #81b3d2;
+    
 }
 
 .hotels-item .ref-details:hover {
@@ -572,7 +625,8 @@ body {
     height: 27px;
 
     text-decoration: none;
-    color: #ffffff;    
+    color: #ffffff;  
+    text-align: center;  
     font-weight: bold;
     background-color: #766357;
 }
@@ -586,10 +640,3 @@ body {
     background-color: #503e33;
 }
 
-.rating {
-    width: 1200px;
-    height: 966px;
-    
-    color: #666666;    
-    background-color: #f2f2f2;
-}
