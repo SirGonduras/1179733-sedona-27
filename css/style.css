@@ -217,7 +217,7 @@ button:hover {
 .description-intro {
     width: 1200px;
     min-height: 216px;
-
+    
     text-align: center;
 }
 
@@ -324,6 +324,25 @@ button:hover {
 
 .offer p {
     color: #333333;
+}
+
+.selection {
+    width: 568px;
+    height: 395px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+
+    padding-left: 55px;
+    padding-top: 55px;
+    padding-right: 55px;
+    padding-bottom: 55px;
+}
+
+.selection .date-input {
+    width: 346px;
+    height: 38px;
+    margin-bottom: 30px;
 }
 
 .selection label{
