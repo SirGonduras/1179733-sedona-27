@@ -54,7 +54,7 @@ button:hover {
 /* Как поместить логотип в центр? */
 .img-logo {
     position: absolute;
-    margin: 0 auto;
+    left: 529px;
 }
 
 .main-navigation a {
@@ -69,7 +69,7 @@ button:hover {
 
 .main-navigation li:nth-child(3)
 {
-    margin-left: auto;
+    margin-left: 244px;
 }
 
 .site-navigation .selected {
@@ -331,22 +331,49 @@ button:hover {
     height: 395px;
     margin: 0 auto;
     box-sizing: border-box;
-    text-align: left;
-
+/* 
     padding-left: 55px;
     padding-top: 55px;
     padding-right: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 55px; */
 }
 
-.selection .date-input {
+.selection-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selection-form label{
+    font-weight: bold;
+}
+
+.selection-form  .date-in {
+    padding-left: 55px;
+    padding-top: 69px;
+    vertical-align: center;
+}
+
+.selection-form .date-input-in {
     width: 346px;
     height: 38px;
     margin-bottom: 30px;
 }
 
-.selection label{
-    font-weight: bold;
+.selection-form .date-input-out {
+    width: 346px;
+    height: 38px;
+    margin-left: 17px;
+    margin-bottom: 30px;
+}
+
+
+
+.selection-form .date-in {
+    padding-right: 21px;
+}
+
+.selection-form .date-our {
+    margin-right: 17px;
 }
 
 .selection input {
