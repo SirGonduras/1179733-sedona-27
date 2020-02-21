@@ -102,6 +102,7 @@ button:hover {
 
 .main-footer {
     min-height: 120px;
+    opacity: 0.9;
 
     box-sizing: border-box;
     display: flex;
