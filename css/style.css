@@ -42,6 +42,7 @@ button:hover {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .site-navigation li {
@@ -206,6 +207,8 @@ button:hover {
 }
 
 .intro-text {
+    width: 459px;
+    height: 353px;
     padding-top: 76px;
     padding-left: 370px;
 }
