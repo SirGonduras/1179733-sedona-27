@@ -60,7 +60,8 @@ button:hover {
 .main-navigation li {
     min-width: 239px;
     min-height: 56px;
-    padding-top: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     box-sizing: border-box;
     text-align: center;
@@ -70,7 +71,7 @@ button:hover {
 .main-header-logo {
     width: 139px;
     height: 71px;
-    
+
     position: absolute;
     left: 529px;
 }
@@ -111,10 +112,18 @@ button:hover {
 
 .main-footer {
     min-height: 120px;
-    opacity: 0.9;
+    padding-top: 36px;
 
-    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+.main-footer .container {
+    width: 967px;
+    margin: 0 auto;
+
     display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
 }
 
 .main-footer a {
@@ -123,12 +132,27 @@ button:hover {
 }
 
 .contacts {
+    width: 223px;
+    /* padding-left: 132px; */
+    /* padding-top: 36px; */
+
     font-size: 21px;
     font-weight: bold;
-
-    padding-left: 132px;
-    padding-top: 36px;
 }
+
+.contacts a {
+    display: block;
+    
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: normal;
+}
+/* 
+
+
 
 .contacts a {
     display: block;
@@ -200,7 +224,7 @@ button:hover {
 
 .html-academy svg:active {
     fill: #bdbbbc;
-}
+} */
 
 /* ================ */
 /* index main */
