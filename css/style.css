@@ -60,13 +60,17 @@ button:hover {
 .main-navigation li {
     min-width: 239px;
     min-height: 56px;
+    padding-top: 22px;
+
     box-sizing: border-box;
     text-align: center;
     list-style: none;
-    padding-top: 22px;
 }
 
-.img-logo {
+.main-header-logo {
+    width: 139px;
+    height: 71px;
+    
     position: absolute;
     left: 529px;
 }
