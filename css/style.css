@@ -270,6 +270,35 @@ button:hover {
     padding-bottom: 64px;
 }
 
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number::before,
+.number::after {
+    content: "";
+
+    width: 9px;
+    height: 1px;
+
+    background: #ffffff;    
+}
+
+.fourth-row .number::before,
+.fourth-row .number::after {
+    background: #000000;    
+}
+
+.number::before {
+    margin-right: 6px;
+}
+
+.number::after {
+    margin-left: 6px;
+}
+
 .description-intro {
     width: 1200px;
     min-height: 216px;
