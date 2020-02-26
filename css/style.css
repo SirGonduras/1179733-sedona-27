@@ -24,7 +24,7 @@ body {
 button:hover {
     cursor: pointer;
 }
-
+/* 
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -34,6 +34,23 @@ button:hover {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+} */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ================ */
@@ -443,6 +460,10 @@ button:hover {
     margin-bottom: 30px;
 }
 
+.date-input .icon-calendar {
+    background-image: url("img/calendar.svg");
+}
+
 
 .selection-form .date-in {
     padding-right: 21px;
@@ -533,30 +554,98 @@ button:hover {
 /* ================ */
 
 .filter {
-    height: 217px;
+    min-height: 217px;
     margin: 0;
     padding: 0;
+    
     color: #ffffff;
     background: #81b3d2 url("../img/background-filter.jpg") no-repeat 50% 50%;
 }
 
 .filter-form {
+    margin-left: 72px;
+    margin-right: 74px;
+    padding-top: 31px;
+    
     box-sizing: border-box;
-    display: flex;
+    display: flex;    
+}
+
+.filter-form legend {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 34px;
 }
 
 .filter-form fieldset {
     margin: 0;
     padding: 0;
 
-    padding-left: 72px;
-    padding-top: 31px;
+    margin-left: 72px;
     border: 0 none;    
 }
 
-.filter-range {
-    width: 330px;
+.filter-form fieldset:first-child {
+    margin-left: 0;
+}
+
+.filter-form fieldset:last-child {
+    margin-left: 0;
+    margin-left: auto;
+}
+
+.filter-form label {
+    margin-bottom: 36px;
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
   
+    position: absolute;
+    top: 4px;
+    left: -38px;
+  
+    width: 23px;
+    height: 23px;
+    
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+} 
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+  
+    position: absolute;
+    top: 4px;
+    left: -38px;
+  
+    width: 27px;
+    height: 23px;
+    
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-form  ul {
+    padding-left: 40px;
+}
+
+.filter-form li{
+    list-style: none;
+    text-align: left;
+}
+
+.filter-range {
+    width: 330px;    
+
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -690,33 +779,13 @@ button:hover {
 
 .filter-form legend {
     font-size: 16px;
-    padding-top: 31px;
     font-weight: bold;
 }
-
-.filter-form ul {
-    padding: 0;
-    margin: 0;
-}
-
-.filter-form li{
-    list-style: none;
-    text-align: left;
-}
-
 
 .hotels-filter li {
     font-size: 10.5px;
     list-style: none;
     color: #81b3d2;
-}
-
-.hotels-list li {
-    list-style: none;
-}
-
-.filter-form fieldset:nth-child(3) {
-    margin-left: 388px;
 }
 
 .hotels {
@@ -727,7 +796,6 @@ button:hover {
     min-height: 86px;
     display: flex;
 }
-
 
 .hotels-filter .hotels-container {
     width: 520px;
