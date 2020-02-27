@@ -24,17 +24,6 @@ body {
 button:hover {
     cursor: pointer;
 }
-/* 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-} */
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
@@ -267,14 +256,14 @@ input[type="checkbox"].visually-hidden {
 
 .double-item {
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     box-sizing: border-box;
     
     text-align: center;
     padding-top: 46px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 64px;
+    /* padding-bottom: 64px; */
 }
 
 .number {
@@ -304,6 +293,16 @@ input[type="checkbox"].visually-hidden {
 
 .number::after {
     margin-left: 6px;
+}
+
+.double-item .photo-container {
+    width: 800px;
+    height: 256px;
+    background-color: #594E42;
+}
+
+.photo-container img {
+    width: 100%;
 }
 
 .description-intro {
@@ -1032,4 +1031,3 @@ input[type="checkbox"].visually-hidden {
     color: #857871;
     background-color: #503e33;
 }
-
