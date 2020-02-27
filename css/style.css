@@ -863,44 +863,54 @@ input[type="checkbox"].visually-hidden {
     padding: 0;
 }
 
-.trigers {
-    margin-left: auto;
-}
+.hotels-list .hotels-item {
+    min-height: 150px;
 
-.trigers .triger {
-    fill: #cacaca;
-    cursor: pointer;
-}
-
-.trigers .triger-last {
-    margin-left: 12px;
-}
-
-.trigers .triger-active {
-    fill: #81b3d2;
-}
-
-.hotels-list li {
-    min-height: 151px;
+    list-style: none;
     border-top: 1px solid #b2b2b2;
+}
+
+.hotels-list .hotels-item:last-of-type {
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.hotels-item .container {
+    width: auto;
+
+    margin: 0 auto;
     padding-top: 30px;
-    box-sizing: border-box;
+    padding-left: 72px;
+    padding-right: 72px;
 
     display: flex;
 }
 
-.hotels-list li:last-of-type {
-    border-bottom: 1px solid #b2b2b2;
+.hotels-item .photo-container {
+    width: 135px;
+    height: 90px;
 }
 
-.hotels-list img {
-    padding-left: 72px;
-    padding-right: 30px;
+.hotels-name a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.hotels-name a:hover {
+    color: #81b3d2;
+}
+
+.hotels-name a:active {
+    color: #0000004c;
+}
+
+.photo-container img {
+    width: 100%;
 }
 
 .container-info {
     margin: 0;
     padding: 0;
+    margin-left: 30px;
     box-sizing: border-box;
     width: 258px;
     
@@ -924,12 +934,41 @@ input[type="checkbox"].visually-hidden {
     font-weight: bold;
 }
 
+.trigers {
+    margin-left: auto;
+}
+
+.trigers .triger {
+    fill: #cacaca;
+    cursor: pointer;
+}
+
+.trigers .triger-last {
+    margin-left: 12px;
+}
+
+.trigers .triger-active {
+    fill: #81b3d2;
+}
+
+.trigers .triger:hover {
+    fill: #000000;
+}
+
+.trigers .triger:active {
+    fill: #81b3d2;
+}
+
 .hotels-item .container-rating {
     width: 111px;
     height: 91px;
     margin-left: auto;
     padding-right: 72px;
     position: relative;
+}
+
+.container-rating .stars {
+    text-align: right;
 }
 
 .container-rating .rating {
