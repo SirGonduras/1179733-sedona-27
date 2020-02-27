@@ -782,26 +782,32 @@ input[type="checkbox"].visually-hidden {
     font-weight: bold;
 }
 
-.hotels-filter li {
-    font-size: 10.5px;
-    list-style: none;
-    color: #81b3d2;
-}
-
 .hotels {
     box-sizing: border-box;
 }
 
 .hotels-filter {
     min-height: 86px;
+}
+
+.hotels-filter .container {
+    margin: 0 auto;
+    padding-top: 31px;
+    padding-left: 72px;
+    padding-right: 72px;
+
     display: flex;
 }
 
-.hotels-filter .hotels-container {
-    width: 520px;
+.hotels-filter li {
+    font-size: 10.5px;
+    list-style: none;
+    color: #81b3d2;
+}
+
+.hotels-filter .sort {
     margin: 0;
     padding: 0;
-    padding-top: 31px;
     box-sizing: border-box;
     display: flex;
 }
@@ -809,8 +815,7 @@ input[type="checkbox"].visually-hidden {
 
 .hotels-filter h3 {
     margin: 0;
-    min-width: 151px;
-    padding-left: 72px;
+    width: 151px;
     
     font-size: 21px;
     font-weight: bold;
@@ -856,6 +861,23 @@ input[type="checkbox"].visually-hidden {
 .hotels-list {
     margin: 0;
     padding: 0;
+}
+
+.trigers {
+    margin-left: auto;
+}
+
+.trigers .triger {
+    fill: #cacaca;
+    cursor: pointer;
+}
+
+.trigers .triger-last {
+    margin-left: 12px;
+}
+
+.trigers .triger-active {
+    fill: #81b3d2;
 }
 
 .hotels-list li {
@@ -915,6 +937,7 @@ input[type="checkbox"].visually-hidden {
     height: 27px;
     padding-right: 1px;
     vertical-align: bottom;
+    text-align: center;
     position: absolute;
     bottom: 0;
 
