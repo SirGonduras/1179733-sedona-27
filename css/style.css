@@ -229,10 +229,10 @@ input[type="checkbox"].visually-hidden {
 
 .intro {
     width: 1200px;
-    height: 528px;
+    min-height: 508px;
     background: 
         url(../img/intro-mask.svg) no-repeat 50% calc(100% + 2px),
-        #594E42 url("../img/intro-background.jpg") no-repeat 50% 30%;
+        #594E42 url("../img/intro-background.jpg") no-repeat 50% 21%;
 }
 
 .intro-text {
@@ -240,11 +240,6 @@ input[type="checkbox"].visually-hidden {
     height: 353px;
     padding-top: 76px;
     padding-left: 370px;
-}
-
-.description {
-    box-sizing: border-box;
-    line-height: 21px;
 }
 
 .double-items {
@@ -307,18 +302,26 @@ input[type="checkbox"].visually-hidden {
 }
 
 .description-intro {
-    width: 1200px;
     min-height: 216px;
-    
     text-align: center;
 }
 
 .description-intro h2 {
     margin: 0 auto;
-    padding-top: 61px;
+    /* width: 440px; */
+    padding-top: 60px;
     padding-bottom: 38px;
     padding-right: 380px;
     padding-left: 380px;
+
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: normal;
+    text-align: center;
+
 }
 
 .description-intro p {
@@ -328,16 +331,6 @@ input[type="checkbox"].visually-hidden {
     padding-right: 355px;
     padding-left: 355px;
     padding-bottom: 56px;
-}
-
-.description h2 {
-    font-size: 21px;
-    font-weight: bold;
-}
-
-.description h3 {
-    font-size: 21px;
-    font-weight: bold;
 }
 
 .second-row {
@@ -454,7 +447,7 @@ input[type="checkbox"].visually-hidden {
     display: flex;
 }
 
-.selection-form .date-input[type="date"] {
+.selection-form .date-input[type="text"] {
   box-sizing: border-box;
   width: 346px;
   height: 38px;
@@ -477,27 +470,22 @@ input[type="checkbox"].visually-hidden {
   outline: none;
 }
 
-.selection-form .date-input::-webkit-inner-spin-button,
-.selection-form .date-input::-webkit-clear-button {
-    display: none;
+.selection-form .date-input{
+    background-image: url("../img/calendar.svg");
+    background-position: 316px center;
+    background-repeat: no-repeat;
 }
 
-.selection-form .date-input::-webkit-calendar-picker-indicator {
-    height: 22px;
-    width: 22px;
-    color: transparent; 
-    opacity: 1;
-    cursor: pointer;
-
-    background: url(../img/calendar.svg) no-repeat center;
+.selection-form .date-input:hover{
+    background-image: url("../img/calendar-hover.svg");
+    background-position: 316px center;
+    background-repeat: no-repeat;
 }
 
-.selection-form .date-input::-webkit-calendar-picker-indicator:hover{
-    background: url(../img/calendar-hover.svg) no-repeat center;
-}
-
-.selection-form .date-input::-webkit-calendar-picker-indicator:active{
-    background: url(../img/calendar-active.svg) no-repeat center;
+.selection-form .date-input:active{
+    background-image: url("../img/calendar-active.svg");
+    background-position: 316px center;
+    background-repeat: no-repeat;
 }
 
 .selection-form .date-input:hover {
@@ -582,6 +570,7 @@ input[type="checkbox"].visually-hidden {
     left: 11px;
     background: #a9a9a9;
 }
+
 
 .btn:after {
     position: absolute;
