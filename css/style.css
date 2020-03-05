@@ -266,7 +266,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .double-item .style-h3 {
-    width: 150px;
+    width: 151px;
     margin: 0 auto;
     padding-top: 46px;
     margin-bottom: 22px;
@@ -318,15 +318,15 @@ input[type="checkbox"].visually-hidden {
     letter-spacing: normal;
 }
 
-.double-item .photo-container {
+.double-items .photo-container {
     width: 800px;
-    /* height: 256px; */
+    height: 256px;
     background-color: #594E42;
 }
 
 .photo-container img {
-    /* width: 100%; */
-    /* height: 100%; */
+    width: 100%;
+    height: 100%;
 }
 
 .description-intro {
@@ -367,6 +367,24 @@ input[type="checkbox"].visually-hidden {
     display: flex;
 }
 
+.second-row h3 {
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: normal;
+}
+
+.second-row p {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: normal;
+}
+
 .second-row li{
     width: 400px;
     min-height: 330px;
@@ -374,17 +392,16 @@ input[type="checkbox"].visually-hidden {
     
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 86px;
+    padding-bottom: 57px;
 }
-
 .second-item-1 {
     padding-left: 73px;
     padding-right: 75px;
 }
 
 .second-item-2 {
-    padding-left: 58px;
-    padding-right: 58px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .second-item-3 {
@@ -403,6 +420,28 @@ input[type="checkbox"].visually-hidden {
     display: flex;
 }
 
+.fourth-row h3 {
+    width: 130px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 20px;
+
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: normal;
+}
+
+.fourth-row p {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: normal;
+}
 .fourth-row li{
     width: 400px;
     min-height: 256px;
@@ -410,44 +449,49 @@ input[type="checkbox"].visually-hidden {
     background-color: #eeeeee;
     
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 63px;
 }
 
-.fourth-item-1 {
-    padding-left: 95px;
-    padding-right: 97px;
+.fourth-item-1 p {
+    width: 208px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.fourth-item-2 {
-    padding-left: 69px;
-    padding-right: 69px;
+.fourth-item-2 p {
+    width: 262px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.fourth-item-3 {
-    padding-left: 77px;
-    padding-right: 77px;
+.fourth-item-3 p {
+    width: 247px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .offer {
     min-height: 291px;
-    padding-top: 57px;
     text-align: center;
 }
 
 .offer h2 {
-    line-height: 24px;
+    margin: 0;
+    padding-top: 50px;
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
 }
 
 .offer p {
+    margin: 0 auto;
+    width: 435px;
+    margin-bottom: 46px;
+
     line-height: 24px;
     color: #333333;
-    padding-left: 382px;
-    padding-right: 382px;
-    padding-bottom: 52px;
 }
-
-
 
 .selection {
     width: 568px;
