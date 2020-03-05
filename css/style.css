@@ -1016,7 +1016,7 @@ input[type="checkbox"].visually-hidden {
 
 .hotels-filter p{
     margin: 0;
-    margin-left: 49px;
+    margin-left: 12px;
     font-size: 10.5px;
 }
 
@@ -1157,7 +1157,6 @@ input[type="checkbox"].visually-hidden {
     width: 111px;
     height: 91px;
     margin-left: auto;
-    padding-right: 72px;
     position: relative;
 }
 
