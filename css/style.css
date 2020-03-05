@@ -125,14 +125,14 @@ input[type="checkbox"].visually-hidden {
 
 .main-footer {
     min-height: 120px;
-    padding-top: 36px;
 
     opacity: 0.9;
 }
 
 .main-footer .container {
-    width: 967px;
-    margin: 0 auto;
+    width: 984px;
+    padding-right: 101px;
+    padding-left: 115px;
 
     display: flex;
 }
@@ -143,11 +143,31 @@ input[type="checkbox"].visually-hidden {
 }
 
 .main-footer .contacts {
-    width: 223px;
+    width: 240px;
+    padding-top: 31px;
     padding-bottom: 16px;
 
     font-size: 21px;
     font-weight: bold;
+}
+
+.contacts a {
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: normal;
+    text-align: center;
+    
+}
+.contacts .ref-index { 
+    padding-left: 9px;
+}
+
+.contacts .ref-tel {
+    display: block;
+    margin-top: 6px;
 }
 
 .socmedia-list {
@@ -155,6 +175,7 @@ input[type="checkbox"].visually-hidden {
     margin: 0;
     margin-left: 169px;
     padding: 0;
+    padding-top: 35px;
 
     display: flex;
     flex-wrap: wrap;
@@ -205,8 +226,9 @@ input[type="checkbox"].visually-hidden {
 .html-academy {
     min-height: 41px;
     width: 197px;
-    margin-left: 228px;
+    margin-left: auto;
     padding-top: 3px;
+    padding-top: 38px;
 
     display: flex;
     vertical-align: middle;
@@ -470,7 +492,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .offer {
-    min-height: 291px;
+    min-height: 764px;
     text-align: center;
 }
 
