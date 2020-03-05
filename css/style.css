@@ -16,6 +16,9 @@ body {
     font-size: 14px;
     line-height: 26px;
     font-weight: regular;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
     color: #000000;
     text-transform: uppercase;    
     background-color: #ffffff;
@@ -98,6 +101,10 @@ input[type="checkbox"].visually-hidden {
 .main-navigation li:nth-child(3n)
 {
     margin-left: 244px;
+}
+
+.main-navigation .nav-hotel {
+    padding-left: 14px;
 }
 
 .site-navigation .selected {
@@ -243,6 +250,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .double-items {
+    min-height: 256px;
+    box-sizing: border-box;
     display: flex;
     
     color: #ffffff;
@@ -251,14 +260,20 @@ input[type="checkbox"].visually-hidden {
 
 .double-item {
     width: 400px;
-    min-height: 256px;
     box-sizing: border-box;
     
     text-align: center;
+}
+
+.double-item .style-h3 {
+    width: 150px;
+    margin: 0 auto;
     padding-top: 46px;
-    padding-left: 60px;
-    padding-right: 60px;
-    /* padding-bottom: 64px; */
+    margin-bottom: 22px;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
 }
 
 .number {
@@ -290,15 +305,28 @@ input[type="checkbox"].visually-hidden {
     margin-left: 6px;
 }
 
+.double-item p {
+    width: 303px;
+    margin: 0 auto;
+    margin-top: 19px;
+
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: normal;
+}
+
 .double-item .photo-container {
     width: 800px;
-    height: 256px;
+    /* height: 256px; */
     background-color: #594E42;
 }
 
 .photo-container img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 
 .description-intro {
@@ -308,9 +336,8 @@ input[type="checkbox"].visually-hidden {
 
 .description-intro h2 {
     margin: 0 auto;
-    /* width: 440px; */
     padding-top: 60px;
-    padding-bottom: 38px;
+    padding-bottom: 27px;
     padding-right: 380px;
     padding-left: 380px;
 
@@ -330,7 +357,7 @@ input[type="checkbox"].visually-hidden {
 
     padding-right: 355px;
     padding-left: 355px;
-    padding-bottom: 56px;
+    padding-bottom: 51px;
 }
 
 .second-row {
