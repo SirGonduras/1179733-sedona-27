@@ -207,6 +207,11 @@ input[type="checkbox"].visually-hidden {
     fill: #ffffff;
 }
 
+.socmedia-list .social-ref {
+    width: 46px;
+    height: 48px;
+}
+
 .socmedia-list .twitter{
     padding-top: 17px;    
 }
@@ -227,9 +232,12 @@ input[type="checkbox"].visually-hidden {
     background-color: #5496bd;
 }
 
-.social-button:active path {
+.social-button:active svg {
     fill: #88b6d1;
 }
+
+
+
 
 .html-academy {
     min-height: 41px;
@@ -268,7 +276,7 @@ input[type="checkbox"].visually-hidden {
     width: 1200px;
     min-height: 508px;
     background: 
-        url(../img/intro-mask.svg) no-repeat 50% calc(100% + 2px),
+        url("../img/intro-mask.svg") no-repeat 50% calc(100% + 2px),
         #594E42 url("../img/intro-background.jpg") no-repeat 50% 21%;
 }
 
@@ -525,13 +533,17 @@ input[type="checkbox"].visually-hidden {
 
 .selection {
     width: 568px;
-    height: 395px;
     margin: 0 auto;
+    position: relative;
+}
+
+.map-sedona {
+    background: url("/img/map.jpg") #81b3d2 no-repeat 50% 50%;
 }
 
 .selection .container {
     margin: 0;
-    margin:  0 auto;
+    margin: 0 auto;
     padding: 55px;
     
     width: 458px;
@@ -546,6 +558,15 @@ input[type="checkbox"].visually-hidden {
     margin-bottom: 30px;
 
     display: flex;
+}
+
+
+.selection-form {
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    
 }
 
 .selection-form .date-input[type="text"] {
@@ -732,7 +753,6 @@ input[type="checkbox"].visually-hidden {
     width: 458px;
     height: 58px;
     margin-top: 54px;
-    margin-bottom: 55px;
 }
 
 .offer .btn-submit:hover {
@@ -1057,8 +1077,8 @@ input[type="checkbox"].visually-hidden {
 
 .sort-list a {
     text-decoration: none;
-    color: #0000004c;
-    border-bottom: 1px dotted #0000004c;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 }
 
 .sort-list .selected {
@@ -1128,14 +1148,16 @@ input[type="checkbox"].visually-hidden {
     letter-spacing: normal;
     text-align: left;
     text-decoration: none;
+    
 }
 
 .hotels-name a:hover {
     color: #81b3d2;
+    
 }
 
 .hotels-name a:active {
-    color: #0000004c;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .photo-container img {
