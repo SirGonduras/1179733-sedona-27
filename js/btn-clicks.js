@@ -13,16 +13,21 @@ var btn_plus_children = date_form.querySelector(".btn-plus-children");
 
 
 // Обработка формы
-date_form.classList.add("form-show");
 
 btn_form.addEventListener("click", function (evt) {
     evt.preventDefault();
 
-    if(date_form.classList.contains("form-show")) {
-        date_form.classList.remove("form-show");
-    } else {
-        date_form.classList.add("form-show");
+    if(date_form.classList.contains("form-hide")) {
+        date_form.classList.remove("form-anim-up");
+        date_form.classList.add("form-anim-down");
+        date_form.classList.remove("form-hide");        
         date_in.focus();
+    } else {
+        date_form.classList.remove("form-anim-down");
+        date_form.classList.add("form-anim-up");
+        // date_form.classList.add("form-hide");       
+        
+        setTimeout(date_form.classList.add("form-hide"), 600);
     }
 });
 
