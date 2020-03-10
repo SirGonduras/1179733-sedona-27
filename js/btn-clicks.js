@@ -52,4 +52,3 @@ btn_plus_children.addEventListener("click", function (evt) {
 
     childrens_count.value ++;
 });
-
