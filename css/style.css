@@ -317,8 +317,13 @@ input[type="checkbox"].visually-hidden {
 
 .number {
     display: flex;
+    line-height: 21px;
     justify-content: center;
     align-items: center;
+}
+
+.number-row-4 {
+    color: #333333;
 }
 
 .number::before,
@@ -422,6 +427,8 @@ input[type="checkbox"].visually-hidden {
     font-style: normal;
     line-height: 21px;
     letter-spacing: normal;
+
+    color: #333333;
 }
 
 .second-row li {
@@ -482,7 +489,7 @@ input[type="checkbox"].visually-hidden {
     line-height: 21px;
     letter-spacing: normal;
 }
-.fourth-row li{
+.fourth-row li {
     width: 400px;
     min-height: 256px;
     box-sizing: border-box;
@@ -495,18 +502,24 @@ input[type="checkbox"].visually-hidden {
     width: 208px;
     margin: 0 auto;
     margin-top: 20px;
+
+    color: #333333;
 }
 
 .fourth-item-2 p {
     width: 262px;
     margin: 0 auto;
     margin-top: 20px;
+
+    color: #333333;
 }
 
 .fourth-item-3 p {
     width: 247px;
     margin: 0 auto;
     margin-top: 20px;
+
+    color: #333333;
 }
 
 .offer {
@@ -773,6 +786,7 @@ input[type="checkbox"].visually-hidden {
     text-align: center;
     font-size: 21px;
     color: #ffffff;
+    font-weight: bold;
     vertical-align: middle;
     text-transform: uppercase;
     
@@ -847,6 +861,7 @@ input[type="checkbox"].visually-hidden {
     
     font-size: 16px;
     font-weight: bold;
+    line-height: 21px;
 }
 
 .filter-form fieldset {
@@ -982,7 +997,7 @@ input[type="checkbox"].visually-hidden {
     display: inline-flex;
 
     font-size: 14px;
-    line-height: 38px;
+    line-height: 21px;
     vertical-align: top;
 
     cursor: pointer;
@@ -1008,6 +1023,8 @@ input[type="checkbox"].visually-hidden {
 
     background: none;
     border: none;
+
+    line-height: 21px;
 }
 
 .range-controls {
@@ -1060,7 +1077,7 @@ input[type="checkbox"].visually-hidden {
     padding: 6px 35px;
 
     font-size: 14px;
-    line-height: 20px;
+    line-height: 21px;
     color: #ffffff;
     text-transform: uppercase;
 
@@ -1122,6 +1139,8 @@ input[type="checkbox"].visually-hidden {
     margin-left: 12px;
     padding-top: 2px;
     font-size: 12px;
+
+    line-height: 18px;
 }
 
 .sort-list a {
@@ -1229,14 +1248,17 @@ input[type="checkbox"].visually-hidden {
 
 .container-info .hotels-cost-1 {
     margin-left: 38px;
+    line-height: 21px;
 }
 
 .container-info .hotels-cost-2 {
     margin-left: 65px;
+    line-height: 21px;
 }
 
 .container-info .hotels-cost-3 {
     margin-left: 21px;
+    line-height: 21px;
 }
 
 .container-info .ref-book {
@@ -1310,6 +1332,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotels-item .hotels-type {
+    line-height: 21px;
     color: #333333;
 }
 
@@ -1326,7 +1349,7 @@ input[type="checkbox"].visually-hidden {
     text-align: center;   
     font-weight: bold;
     background-color: #81b3d2;
-    
+    line-height: 21px;
 }
 
 .hotels-item .ref-details:hover {
@@ -1345,7 +1368,8 @@ input[type="checkbox"].visually-hidden {
 
     text-decoration: none;
     color: #ffffff;  
-    text-align: center;  
+    text-align: center;
+    line-height: 21px;  
     font-weight: bold;
     background-color: #766357;
 }
