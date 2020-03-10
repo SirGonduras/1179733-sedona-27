@@ -277,7 +277,7 @@ input[type="checkbox"].visually-hidden {
     width: 1200px;
     min-height: 508px;
     background: 
-        url("../img/intro-mask.svg") no-repeat 50% calc(100% + 2px),
+        url("../img/intro-mask.svg") no-repeat 50% calc(100% + 3px),
         #594E42 url("../img/intro-background.jpg") no-repeat 50% 21%;
 }
 
