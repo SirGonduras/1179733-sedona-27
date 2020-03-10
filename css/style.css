@@ -12,7 +12,7 @@ body {
     padding: 0;  
     min-width: 1200px;
 
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: regular;
@@ -576,14 +576,14 @@ input[type="checkbox"].visually-hidden {
 }
 
 .form-anim-down {
-    animation: fadeDown 0.6s;
+    animation: fade-down 0.6s;
 }
 
 .form-anim-up {
-    animation: fadeUp 0.6s;
+    animation: fade-up 0.6s;
 }
 
-@keyframes fadeDown {
+@keyframes fade-down {
     0% {
         transform: translateY(-80px);
         opacity: 0;
@@ -600,7 +600,7 @@ input[type="checkbox"].visually-hidden {
     }
 }
 
-@keyframes fadeUp {
+@keyframes fade-up {
     0% {
         transform: translateY(0px);
         opacity: 1;
