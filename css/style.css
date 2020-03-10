@@ -98,8 +98,7 @@ input[type="checkbox"].visually-hidden {
     text-align: center;  
 }
 
-.main-navigation li:nth-child(3n)
-{
+.main-navigation li:nth-child(3n) {
     margin-left: 244px;
 }
 
@@ -151,7 +150,7 @@ input[type="checkbox"].visually-hidden {
     font-weight: bold;
 }
 
-.main-footer .contacts-catalog{
+.main-footer .contacts-catalog {
     padding-left: 5px;
 }
 
@@ -203,6 +202,11 @@ input[type="checkbox"].visually-hidden {
     background-color: #81b3d2;
 }
 
+.social-button a {
+    width: 46px;
+    height: 48px;
+}
+
 .social-button svg {
     fill: #ffffff;
 }
@@ -212,15 +216,15 @@ input[type="checkbox"].visually-hidden {
     min-height: 48px;
 }
 
-.socmedia-list .twitter{
+.socmedia-list .twitter {
     padding-top: 17px;    
 }
 
-.socmedia-list .facebook{
+.socmedia-list .facebook {
     padding-top: 13px;
 }
 
-.socmedia-list .youtube{
+.socmedia-list .youtube {
     padding-top: 16px;
 }
 
@@ -420,7 +424,7 @@ input[type="checkbox"].visually-hidden {
     letter-spacing: normal;
 }
 
-.second-row li{
+.second-row li {
     width: 400px;
     min-height: 330px;
     box-sizing: border-box;
@@ -429,6 +433,7 @@ input[type="checkbox"].visually-hidden {
     padding-top: 60px;
     padding-bottom: 57px;
 }
+
 .second-item-1 {
     padding-left: 73px;
     padding-right: 75px;
@@ -635,19 +640,19 @@ input[type="checkbox"].visually-hidden {
   outline: none;
 }
 
-.selection-form .date-input{
+.selection-form .date-input {
     background-image: url("../img/calendar.svg");
     background-position: 316px center;
     background-repeat: no-repeat;
 }
 
-.selection-form .date-input:hover{
+.selection-form .date-input:hover {
     background-image: url("../img/calendar-hover.svg");
     background-position: 316px center;
     background-repeat: no-repeat;
 }
 
-.selection-form .date-input:active{
+.selection-form .date-input:active {
     background-image: url("../img/calendar-active.svg");
     background-position: 316px center;
     background-repeat: no-repeat;
@@ -927,7 +932,7 @@ input[type="checkbox"].visually-hidden {
     padding-left: 40px;
 }
 
-.filter-form li{
+.filter-form li {
     list-style: none;
     text-align: left;
 }
@@ -974,7 +979,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .price-controls label {
-    display: inline-block;
+    display: inline-flex;
 
     font-size: 14px;
     line-height: 38px;
@@ -997,6 +1002,7 @@ input[type="checkbox"].visually-hidden {
     width: 50px;
     margin: 0;
 
+    padding-left: 6px;
     color: inherit;
     font: inherit;
 
@@ -1111,7 +1117,7 @@ input[type="checkbox"].visually-hidden {
     font-weight: bold;
 }
 
-.hotels-filter p{
+.hotels-filter p {
     margin: 0;
     margin-left: 12px;
     padding-top: 2px;
@@ -1182,7 +1188,7 @@ input[type="checkbox"].visually-hidden {
     height: 90px;
 }
 
-.hotels-name a{
+.hotels-name a {
     color: #000000;
     
     font-stretch: normal;
