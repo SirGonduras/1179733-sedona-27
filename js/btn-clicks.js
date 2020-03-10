@@ -1,3 +1,10 @@
+if (!document.querySelector) {
+    document.querySelector = function (selectors) {
+      var elements = document.querySelectorAll(selectors);
+      return (elements.length) ? elements[0] : null;
+    };
+}
+
 var btn_form = document.querySelector(".btn-form");
 var date_form = document.querySelector(".selection-form");
 
@@ -25,9 +32,7 @@ btn_form.addEventListener("click", function (evt) {
     } else {
         date_form.classList.remove("form-anim-down");
         date_form.classList.add("form-anim-up");
-        date_form.classList.add("form-hide");       
-        
-        // setTimeout(date_form.classList.add("form-hide"), 6000);
+        setTimeout(function() {date_form.classList.add("form-hide")}, 600);
     }
 });
 
