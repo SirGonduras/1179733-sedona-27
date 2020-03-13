@@ -27,7 +27,7 @@ btn_form.addEventListener("click", function (evt) {
     if(date_form.classList.contains("form-hide")) {
         date_form.classList.remove("form-anim-up");
         date_form.classList.add("form-anim-down");
-        date_form.classList.remove("form-hide");        
+        date_form.classList.remove("form-hide");
         date_in.focus();
     } else {
         date_form.classList.remove("form-anim-down");
