@@ -21,6 +21,8 @@ var btn_plus_children = date_form.querySelector(".btn-plus-children");
 
 // Обработка формы
 
+date_form.classList.add("form-hide");
+
 btn_form.addEventListener("click", function (evt) {
     evt.preventDefault();
 
