@@ -134,6 +134,10 @@ input[type="checkbox"].visually-hidden {
     bottom: 0;
 }
 
+.footer-catalog .contacts {
+    padding-left: 5px;
+}
+
 .main-footer .container {
     width: 984px;
     padding-right: 101px;
@@ -170,7 +174,7 @@ input[type="checkbox"].visually-hidden {
     text-align: center;
 }
 
-.contacts .ref-index { 
+.contacts .ref-index {
     padding-left: 9px;
 }
 
@@ -192,6 +196,10 @@ input[type="checkbox"].visually-hidden {
 
     list-style: none;
     text-align: center;
+}
+
+.footer-catalog .socmedia-list {
+    margin-left: 164px;
 }
 
 .socmedia-list-catalog {
@@ -282,7 +290,7 @@ input[type="checkbox"].visually-hidden {
 .intro {
     width: 1200px;
     min-height: 508px;
-    background: 
+    background:
         url("../img/intro-mask.svg") no-repeat 50% calc(100% + 3px),
         #594E42 url("../img/intro-background.jpg") no-repeat 50% 21%;
 }
@@ -812,6 +820,7 @@ input[type="checkbox"].visually-hidden {
 .selection input:hover {
     background-color: #ebebeb;
 }
+
 .selection input:focus {
     background-color: #ffffff;
 }
@@ -1064,6 +1073,7 @@ input[type="checkbox"].visually-hidden {
 
 .price-controls label {
     display: inline-flex;
+    align-items: baseline;
 
     font-size: 14px;
     line-height: 21px;
@@ -1117,6 +1127,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .range-toggle {
+    display: block;
     position: absolute;
     top: -9px;
 
@@ -1196,7 +1207,6 @@ input[type="checkbox"].visually-hidden {
     display: flex;
 }
 
-
 .hotels-filter h3 {
     margin: 0;
     width: 151px;
@@ -1208,7 +1218,7 @@ input[type="checkbox"].visually-hidden {
 .hotels-filter p {
     margin: 0;
     margin-left: 12px;
-    padding-top: 2px;
+    padding-top: 5px;
     font-size: 12px;
 
     line-height: 18px;
@@ -1382,6 +1392,7 @@ input[type="checkbox"].visually-hidden {
 .stars svg {
     margin-left: 2px;
 }
+
 .container-rating .rating {
     width: 110px;
     padding-top: 5px;
