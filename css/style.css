@@ -963,6 +963,10 @@ input[type="checkbox"].visually-hidden {
     background-position: 0 0;
 }
 
+.filter-input-checkbox:focus + label::before {
+    outline: 2px solid #ffffff;
+}
+
 .filter-input-checkbox:disabled + label::before {
     content: "";
 
