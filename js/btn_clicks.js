@@ -33,9 +33,9 @@ btn_form.addEventListener("click", function (evt) {
         date_form.classList.remove("form-hide");
         date_in.focus();
     } else {
+        date_form.classList.remove("form-anim-shake");
         date_form.classList.remove("form-anim-down");
-        date_form.classList.remove("form-anim-down");
-        date_form.classList.add("form-anim-shake");
+        date_form.classList.add("form-anim-up");
         setTimeout(function() {date_form.classList.add("form-hide")}, 600);
     }
 });
@@ -65,6 +65,8 @@ btn_plus_children.addEventListener("click", function (evt) {
     evt.preventDefault();
     childrens_count.value ++;
 });
+
+// Ошибка ввода
 
 date_form.addEventListener("submit", function (evt) {
     if (!date_in.value || !password.value || !adults_count.value ||
