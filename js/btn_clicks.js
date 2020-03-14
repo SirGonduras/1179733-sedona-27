@@ -9,12 +9,13 @@ var btn_form = document.querySelector(".btn-form");
 var date_form = document.querySelector(".selection-form");
 
 var date_in = date_form.querySelector("[name=date-in]");
-
+var date_out = date_form.querySelector("[name=date-out]");
 var adults_count = date_form.querySelector("[name=adults-count]");
+var childrens_count = date_form.querySelector("[name=childrens-count]");
+
 var btn_minus_adult = date_form.querySelector(".btn-minus-adult");
 var btn_plus_adult = date_form.querySelector(".btn-plus-adult");
 
-var childrens_count = date_form.querySelector("[name=childrens-count]");
 var btn_minus_children = date_form.querySelector(".btn-minus-children");
 var btn_plus_children = date_form.querySelector(".btn-plus-children");
 
@@ -33,7 +34,8 @@ btn_form.addEventListener("click", function (evt) {
         date_in.focus();
     } else {
         date_form.classList.remove("form-anim-down");
-        date_form.classList.add("form-anim-up");
+        date_form.classList.remove("form-anim-down");
+        date_form.classList.add("form-anim-shake");
         setTimeout(function() {date_form.classList.add("form-hide")}, 600);
     }
 });
@@ -61,6 +63,16 @@ btn_minus_children.addEventListener("click", function (evt) {
 
 btn_plus_children.addEventListener("click", function (evt) {
     evt.preventDefault();
-
     childrens_count.value ++;
+});
+
+date_form.addEventListener("submit", function (evt) {
+    if (!date_in.value || !password.value || !adults_count.value ||
+            !childrens_count.value) {
+        evt.preventDefault();
+        date_form.classList.remove("form-anim-shake");
+        date_form.offsetWidth = date_form.offsetWidth;
+        date_form.classList.add("form-anim-shake");
+        console.log("Заполните поля");
+    }
 });
