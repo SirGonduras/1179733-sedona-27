@@ -576,7 +576,7 @@ input[type="checkbox"].visually-hidden {
 
 .selection {
     width: 568px;
-    margin: 0 auto;
+    margin  : 0 auto;
     position: relative;
 }
 
@@ -606,6 +606,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .container-date .btn-calendar {
+    z-index: 6  ;
     position: absolute;
     width: 21px;
     height: 22px;
