@@ -1183,7 +1183,6 @@ input[type="checkbox"].visually-hidden {
 
 .btn-transparent:hover {
     color: #000000;
-
     background: #ffffff;
 }
 
@@ -1191,7 +1190,12 @@ input[type="checkbox"].visually-hidden {
     box-sizing: border-box;
 }
 
+.hotels-result {
+    background-color: #ffffff;
+}
+
 .hotels-filter {
+    background-color: #ffffff;
     min-height: 86px;
 }
 
