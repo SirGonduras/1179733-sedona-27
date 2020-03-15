@@ -819,6 +819,7 @@ input[type="checkbox"].visually-hidden {
 .btn:hover {
     stroke: black;
     cursor: pointer;
+    background-color: #ebebeb;
 }
 
 .btn:active {
