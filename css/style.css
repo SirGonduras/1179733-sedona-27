@@ -396,6 +396,7 @@ input[type="checkbox"].visually-hidden {
 
 .description-intro h2 {
     margin: 0 auto;
+    width: 446px;
     padding-top: 60px;
     padding-bottom: 27px;
     padding-right: 380px;
@@ -716,6 +717,7 @@ input[type="checkbox"].visually-hidden {
     height: 38px;
 
     margin: 0;
+    padding: 0;
     margin-left: auto;
 
     padding-left: 13px;
@@ -780,8 +782,10 @@ input[type="checkbox"].visually-hidden {
 }
 
 .with-control .number-input[type="text"] {
+    box-sizing: border-box;
     height: 38px;
     width: 38px;
+    margin: 0;
     padding: 0;
 
     font-family: "PT Sans", "Arial", sans-serif;
@@ -793,11 +797,18 @@ input[type="checkbox"].visually-hidden {
 
     background: #f2f2f2;
     border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.selection-form .number-input:hover {
+    background-color: #ebebeb;
 }
 
 .with-control .number-input:focus {
     background-color: #ffffff;
     border: solid 2px #e5e5e5;
+    outline: none;
 }
 
 .btn {
